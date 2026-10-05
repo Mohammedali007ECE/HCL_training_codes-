@@ -25,3 +25,42 @@ exit(EXIT_SUCCESS);
 exit(EXIT_FAILURE);
 }
 ~~~
+~~~
+2.Basic_Syntax_template_to_write (popen)
+
+#include<stdio.h>
+#include<stdlib.h>
+int main() {
+FILE *fp;
+char buffer [1024];
+fp=fopen ("your_command_here","r");
+if (fp==NULL) {
+perror ("popen failed");
+exit (EXIT_FAILURE);
+}
+while (fgets(buffer,size_of(buffer,fp)!=NULL){
+printf("output was : -\n%s\n",buffer);
+}
+pclose(read_fp);
+exit(EXIT_SUCCESS);
+}
+exit(EXIT_FAILURE);
+}
+~~~
+~~~
+3.Basic_Syntax_for_Reading_the_output
+
+#include<stdio.h>
+#include<unistd.h>
+int main()
+{
+int fd[2];
+char buffer [100];
+pipe (fd);
+write (fd[1],"Hello",5);
+read (fd[0],buffer, 5);
+buffer [5]='\0';
+printf("output:%s\n",buffer);
+return 0;
+}
+~~~

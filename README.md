@@ -22,4 +22,4 @@ exit(EXIT_SUCCESS);
 }
 exit(EXIT_FAILURE);
 }
-```
+~~~

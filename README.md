@@ -3,6 +3,7 @@ learning and studing of HCL concepts with respect to concepts , development, and
 # EXERCISE
 ~~~
 1.Reading_output_from_an_external_program
+
 #include<unistd.h>
 #include<stdlib.h>
 #include<stdio.h>
